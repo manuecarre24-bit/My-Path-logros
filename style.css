@@ -1,0 +1,182 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #a8dadc; /* Color de fondo suave */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.mobile-container {
+    width: 375px;
+    height: 812px;
+    background-color: #0d6e6e; /* Verde oscuro del header */
+    border-radius: 40px;
+    overflow: hidden;
+    position: relative;
+    box-shadow: 0 20px 40px rgba(0,0,0,0.2);
+}
+
+/* Header */
+.header {
+    height: 35%;
+    padding: 60px 30px;
+    color: white;
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: 600;
+}
+
+.header p {
+    font-size: 1.1rem;
+    opacity: 0.9;
+}
+
+.plant-illustration {
+    position: absolute;
+    right: 20px;
+    top: 100px;
+    width: 120px;
+    z-index: 1;
+}
+
+.plant-illustration img {
+    width: 100%;
+}
+
+/* Card Blanca */
+.login-card {
+    height: 65%;
+    background-color: #f8f9fa;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    padding: 40px 30px;
+    position: relative;
+    z-index: 2;
+}
+
+.login-card h2 {
+    color: #0d6e6e;
+    margin-bottom: 30px;
+    font-size: 2rem;
+}
+
+/* Inputs */
+.input-group {
+    background: white;
+    margin-bottom: 15px;
+    padding: 15px 20px;
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.input-group i {
+    color: #adb5bd;
+    margin-right: 15px;
+}
+
+.input-group input {
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #495057;
+}
+
+.forgot-pass {
+    display: block;
+    text-align: right;
+    color: #0d6e6e;
+    text-decoration: none;
+    font-size: 0.85rem;
+    margin-bottom: 30px;
+}
+
+/* Botón Principal */
+.btn-login {
+    width: 100%;
+    background-color: #0d6e6e;
+    color: white;
+    border: none;
+    padding: 15px;
+    border-radius: 25px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-login:hover {
+    background-color: #0a5a5a;
+}
+
+/* Social Login */
+.divider {
+    text-align: center;
+    margin: 25px 0;
+    position: relative;
+}
+
+.divider::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background: #dee2e6;
+    left: 0;
+    top: 50%;
+    z-index: -1;
+}
+
+.divider span {
+    background: #f8f9fa;
+    padding: 0 10px;
+    color: #adb5bd;
+    font-size: 0.9rem;
+}
+
+.social-login {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+
+.social-btn {
+    width: 60px;
+    height: 50px;
+    border: 1px solid #dee2e6;
+    border-radius: 12px;
+    background: white;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-btn i {
+    font-size: 1.2rem;
+}
+
+.fa-facebook-f { color: #1877f2; }
+.fa-apple { color: black; }
+
+.signup-text {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+.signup-text a {
+    color: #0d6e6e;
+    font-weight: bold;
+    text-decoration: none;
+}
