@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Path - Dashboard</title>
+    <link rel="stylesheet" href="dashboard-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- logo y encabezados-->
+    <nav class="navbar">
+        <div class="logo">My Path</div>
+        <ul class="nav-links">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Proyectos</a></li>
+            <li><a href="#">Comunidad</a></li>
+            <li><button class="btn-logout" onclick="logout()">Cerrar Sesión</button></li>
+        </ul>
+    </nav>   
+    <!--texto principal juntoa img-->
+    <header class="hero">
+        <div class="hero-container">
+            <div class="hero-text">
+                <h1>Hola, <span id="username">Usuario</span>.</h1>
+                <p>Resolvemos tus metas diarias con tecnología y enfoque. Tu progreso es nuestro éxito.</p>
+                <div class="hero-btns">
+                    <button class="btn-primary">Empezar ahora</button>
+                    <button class="btn-secondary">Ver mis logros</button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="https://illustrations.popsy.co/green/remote-work.svg" alt="Ilustración">
+            </div>
+        </div>
+    </header>
+    <section class="theme-gallery">
+    <div class="section-title">
+        <h2>! PERSONALIZA TU SENDA ¡</h2>
+        <p>Elige el estilo que mejor acompañe tu progreso hoy.</p>
+    </div>
+    <div class="gallery-grid">
+        <div class="theme-card" onclick="changeTheme('organic')">
+            <img src="URL_DE_IMAGEN_1" alt="Orgánico">
+            <span>CRECIMIENTO ORGANICO</span>
+        </div>
+        <div class="theme-card" onclick="changeTheme('dynamic')">
+            <img src="URL_DE_IMAGEN_2" alt="Dinámico">
+            <span>PROGRESO DINAMICO</span>
+        </div>
+        <div class="theme-card" onclick="changeTheme('dark')">
+            <img src="URL_DE_IMAGEN_NUEVA" alt="Dark Forest">
+            <span>BOSQUE NOCTURNO</span>
+        </div>
+    </div>
+</section>
+    <!--segunda pagina abajo-->
+    <section class="services">
+        <div class="section-title">
+            <h2>Nuestros Servicios</h2>
+            <p>Todo lo que necesitas para gestionar tu camino al éxito.</p>
+        </div>
+        <div class="services-grid">
+            <div class="service-card">
+                <i class="fa-solid fa-code"></i>
+                <h3>Desarrollo</h3>
+                <p>Sigue tu progreso aprendiendo nuevas tecnologías día a día.</p>
+                <a href="#" class="learn-more">Saber más</a>
+            </div>
+            <div class="service-card active">
+                <i class="fa-solid fa-cloud"></i>
+                <h3>Nube</h3>
+                <p>Sincroniza tus logros en cualquier lugar del mundo de forma segura.</p>
+                <a href="#" class="learn-more">Saber más</a>
+            </div>
+            <div class="service-card">
+                <i class="fa-solid fa-shield-halved"></i>
+                <h3>Seguridad</h3>
+                <p>Tus datos y metas están protegidos con los mejores estándares.</p>
+                <a href="#" class="learn-more">Saber más</a>
+            </div>
+        </div>
+    </section>
+
+    
+    <script src="dashboard-script.js"></script>
+</body>
+</html>
